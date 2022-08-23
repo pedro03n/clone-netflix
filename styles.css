@@ -1,0 +1,478 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', cursive ,sans-serif;
+}
+
+main{
+    width: 100%;
+    height: auto;
+    background-color: #0D0D0D;
+}
+/* Cabeçalho */
+header{
+    position: relative;
+    width: 100%;
+    height: 700px;
+    background-image: url(imagens/cabecalho.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav{
+    position: fixed;
+    background-color: transparent;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    z-index: 2;
+}
+nav:hover{
+    position: fixed;
+    background-color: #0000005f;
+    top: 0;
+    scroll-snap-align: start;
+}
+
+.left{
+    position: relative;
+    width: 85%;
+    display: flex;
+}
+
+#menu{
+    width: 20px;
+    height: 30px;
+    filter: invert(1);
+    cursor: pointer;
+    margin: 10px 20px;
+}
+
+#logo{
+    width: 60px;
+    height: 55px;
+    margin: 0px 10px; 
+}
+
+.right{
+    position: relative;
+    width: 15%;
+    display: flex;
+    filter: invert(1);
+    cursor: pointer;
+}
+
+#pesquisa{
+    width: 20px;
+    height: 20px;
+    margin: auto;
+    cursor: pointer;
+}
+
+#opcoes{
+    width: 20px;
+    margin: auto;
+}
+
+/*  sobre a serie principal*/
+aside{
+    position: absolute;
+    left: 50px;
+    bottom: 150px;
+    width: 40%;
+    height: 500px;
+    color: #fff;
+}
+
+#icon{
+    width: 20px;
+}
+
+h3{
+    display: inline;
+    color: #ccccccc8;
+    letter-spacing: 10px;
+}
+
+#tbys{
+    width: 98%;
+    padding: 2%;
+}
+
+.icones{
+    position: relative;
+    width: 50%;
+    height: 50px;
+    margin: 1.5% 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.btn{
+    position: relative;
+    width: 40%;
+    height: 40px;
+    color: #fff;
+    text-decoration: none;
+    background-color: #00000071;
+    text-align: center;
+    padding: 2.5%;
+}
+
+.btn:hover{
+    transform: .4s all;
+    filter: invert(1);
+}
+
+
+#play {
+    width: 20px;
+    filter: invert(1);
+}
+
+#addlist{
+    width: 15px;
+    filter: invert(1);
+}
+
+h2{
+    margin-top: 1px;
+}
+
+/* Sessões */
+section{
+    height: auto;
+    margin-bottom: 50px;
+}
+
+h4{
+    color: #fff;
+    font-size: 20px;
+    margin-left: 32px;
+}
+
+/* CARDS */
+
+.conteudo{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.border{
+    position: relative;
+    height:300px ;
+    width: 300px;
+    background: transparent;
+    border-radius: 10px;
+    transition: border 1s; 
+}
+
+.border:hover{
+    border: 2px solid #88888858;
+}
+
+.card {
+    position: relative;
+    width: 280px;
+    height: 300px;
+    background: #80808080;
+    border-radius: 10px;
+    transition:  0.8s;
+    overflow: hidden;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.imagens{
+    width: 300px;
+    height: 300px;
+}
+
+/* Card Animes */
+
+#card1{
+    background: url(imagens/card-animações/card01.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 290px;
+}
+
+#card1:hover{
+    background: url(imagens/card-animações/card01.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 600px;
+}
+
+#card1:hover h2{
+    opacity: 1;
+}
+
+#card1:hover .g{
+    opacity: 1;
+}
+                                                    /* animaçoes */
+#card2{
+    background: url(imagens/card-animações/card03.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 290px;
+}
+
+#card2:hover{
+    background: url(imagens/card-animações/card03.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 500px;
+}
+
+#card2:hover h2{
+    opacity: 1;
+}
+
+#card2:hover .g{
+    opacity: 1;
+}
+                                            /* animações */
+#card3{
+    background: url(imagens/card-animações/card05.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 285px;
+}
+
+#card3:hover{
+    background: url(imagens/card-animações/card05.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 500px;
+}
+
+#card3:hover h2{
+    opacity: 1;
+}
+
+#card3:hover .g{
+    opacity: 1;
+}
+
+/* Card Séries */
+
+#card4{
+    background: url(imagens/card-series/card06.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 290px;
+}
+
+#card4:hover{
+    background: url(imagens/card-series/card06.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 400px;
+}
+
+#card4:hover h2{
+    opacity: 1;
+}
+
+#card4:hover .g{
+    opacity: 1;
+} 
+
+#card5{
+    background: url(imagens/card-series/card08.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 290px;
+}
+
+#card5:hover{
+    background: url(imagens/card-series/card08.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 400px;
+}
+
+#card5:hover h2{
+    opacity: 1;
+}
+
+#card5:hover .g{
+    opacity: 1;
+} 
+
+#card6{
+    background: url(imagens/card-series/card10.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 290px;
+}
+
+#card6:hover{
+    background: url(imagens/card-series/card10.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 400px;
+}
+
+#card6:hover h2{
+    opacity: 1;
+}
+
+#card6:hover .g{
+    opacity: 1;
+} 
+
+
+
+/* Card Filmes */
+
+#card7{
+    background: url(imagens/card-filmes/card11.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 290px;
+}
+
+#card7:hover{
+    background: url(imagens/card-filmes/card11.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 400px;
+}
+
+#card7:hover h2{
+    opacity: 1;
+}
+
+#card7:hover .g{
+    opacity: 1;
+} 
+
+#card8{
+    background: url(imagens/card-filmes/card13.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 290px;
+}
+
+#card8:hover{
+    background: url(imagens/card-filmes/card13.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 400px;
+}
+
+#card8:hover h2{
+    opacity: 1;
+}
+
+#card8:hover .g{
+    opacity: 1;
+} 
+
+#card9{
+    background: url(imagens/card-filmes/card15.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 290px;
+}
+
+#card9:hover{
+    background: url(imagens/card-filmes/card15.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 400px;
+}
+
+#card9:hover h2{
+    opacity: 1;
+}
+
+#card9:hover .g{
+    opacity: 1;
+} 
+
+
+h2{
+    color: #fff;
+    margin-left: 20px;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.g{
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.texto{
+    position: absolute;
+    margin-left: 30px;
+    color:#fff ;
+    height: 130px;
+    bottom:50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.simbolo{
+    width: 20px;
+    height: 20px;
+    filter: invert(1);
+}
+
+
+
+/* rodapé */
+footer{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    color: #fff;
+}
+
+
+footer div{
+    width: auto;
+}
+footer div a{
+    width: auto;
+    display: block;
+    text-decoration: none;
+    color: #ccc;
+}
+
+footer div a:hover{
+    font-weight: 900;
+    color: #fff;
+}
+
+.imgs{
+    width: 30px;
+    height: 30px;
+    filter: invert(1);
+}
+
+#opcao{
+    border-radius: 5px;
+    background-color: #c6c6c6;
+    color: #fff;
+}
+
